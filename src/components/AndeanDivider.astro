@@ -1,0 +1,11 @@
+---
+interface Props {
+  color?: string;
+}
+
+const { color = 'var(--dorado)' } = Astro.props;
+---
+
+<svg class="andean-divider" style={`color:${color}`} viewBox="0 0 400 16" preserveAspectRatio="none">
+  <rect width="400" height="16" fill="url(#step1)" />
+</svg>

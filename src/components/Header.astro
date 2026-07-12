@@ -1,0 +1,19 @@
+---
+import site from '../data/site.json';
+
+const { brand, nav } = site;
+---
+
+<header>
+  <nav class="nav">
+    <a href="#" class="logo">{brand.name} <span>{brand.accent}</span></a>
+    <ul class="nav-links">
+      {nav.links.map((link) => (
+        <li><a href={link.href}>{link.label}</a></li>
+      ))}
+    </ul>
+    <div class="nav-cta">
+      <a href={nav.cta.href} class="btn btn-primary">{nav.cta.label}</a>
+    </div>
+  </nav>
+</header>

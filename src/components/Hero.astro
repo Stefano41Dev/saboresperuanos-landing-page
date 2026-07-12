@@ -1,0 +1,83 @@
+---
+import site from '../data/site.json';
+
+const { hero } = site;
+
+const btnClass = (variant: string) => {
+  if (variant === 'outline') return 'btn btn-outline';
+  return 'btn btn-primary';
+};
+---
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="hero-eyebrow eyebrow">{hero.eyebrow}</div>
+      <h1 class="hero-title">
+        {hero.title} <em>{hero.titleEmphasis}</em><br />{hero.titleLine2}
+      </h1>
+      <p class="hero-sub">{hero.subtitle}</p>
+      <div class="hero-actions">
+        {hero.actions.map((action) => (
+          <a href={action.href} class={btnClass(action.variant)}>{action.label}</a>
+        ))}
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-blob"></div>
+
+      <svg class="hero-bowl" viewBox="0 0 300 260" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="150" cy="205" rx="118" ry="26" fill="rgba(59,42,34,.14)"/>
+        <path d="M40 120 Q150 210 260 120 L250 150 Q150 220 50 150 Z" fill="#F8F4EC"/>
+        <ellipse cx="150" cy="118" rx="110" ry="30" fill="#F8F4EC"/>
+        <ellipse cx="150" cy="118" rx="110" ry="30" fill="none" stroke="#D4A017" stroke-width="3"/>
+        <path d="M75 112 Q150 132 225 112" stroke="#9E1B32" stroke-width="6" fill="none" stroke-linecap="round"/>
+        <path d="M65 104 Q150 126 235 104" stroke="#6C7A3D" stroke-width="6" fill="none" stroke-linecap="round"/>
+        <path d="M85 96 Q150 116 215 96" stroke="#D4A017" stroke-width="6" fill="none" stroke-linecap="round"/>
+        <circle cx="110" cy="100" r="5" fill="#9E1B32"/>
+        <circle cx="180" cy="104" r="5" fill="#9E1B32"/>
+        <circle cx="150" cy="92" r="5" fill="#6C7A3D"/>
+      </svg>
+
+      <svg class="hero-float float-aji" viewBox="0 0 100 100">
+        <path d="M50 10 C30 20 20 60 40 85 C50 95 65 90 68 78 C72 62 58 20 50 10Z" fill="#D4A017"/>
+        <path d="M46 8 Q50 2 56 6" stroke="#6C7A3D" stroke-width="5" fill="none" stroke-linecap="round"/>
+      </svg>
+
+      <svg class="hero-float float-corn" viewBox="0 0 100 130">
+        <ellipse cx="50" cy="65" rx="26" ry="55" fill="#F8F4EC"/>
+        <g fill="#D4A017">
+          <circle cx="38" cy="24" r="5"/><circle cx="50" cy="20" r="5"/><circle cx="62" cy="24" r="5"/>
+          <circle cx="34" cy="38" r="5"/><circle cx="46" cy="34" r="5"/><circle cx="58" cy="34" r="5"/><circle cx="66" cy="38" r="5"/>
+          <circle cx="32" cy="52" r="5"/><circle cx="44" cy="50" r="5"/><circle cx="56" cy="50" r="5"/><circle cx="68" cy="52" r="5"/>
+          <circle cx="34" cy="66" r="5"/><circle cx="46" cy="64" r="5"/><circle cx="58" cy="64" r="5"/><circle cx="66" cy="66" r="5"/>
+          <circle cx="38" cy="80" r="5"/><circle cx="50" cy="78" r="5"/><circle cx="62" cy="80" r="5"/>
+          <circle cx="42" cy="92" r="5"/><circle cx="58" cy="92" r="5"/>
+        </g>
+      </svg>
+
+      <svg class="hero-float float-lime" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="42" fill="#6C7A3D"/>
+        <g stroke="#F8F4EC" stroke-width="2.5" opacity=".8">
+          <line x1="50" y1="12" x2="50" y2="88"/>
+          <line x1="16" y1="30" x2="84" y2="70"/>
+          <line x1="16" y1="70" x2="84" y2="30"/>
+        </g>
+      </svg>
+
+      <svg class="stamp" viewBox="0 0 140 140">
+        <g class="stamp-ring">
+          <defs>
+            <path id="stampCircle" d="M 70 70 m -54 0 a 54 54 0 1 1 108 0 a 54 54 0 1 1 -108 0"/>
+          </defs>
+          <text font-family="JetBrains Mono" font-size="10.5" letter-spacing="2" fill="#3B2A22">
+            <textPath href="#stampCircle" startOffset="0%">SABOR AUTÉNTICO · DESDE PERÚ · SABOR AUTÉNTICO · </textPath>
+          </text>
+        </g>
+        <circle class="stamp-center" cx="70" cy="70" r="34"/>
+        <path d="M70 50 L77 65 L93 67 L81 78 L84 94 L70 86 L56 94 L59 78 L47 67 L63 65 Z" fill="#F8F4EC"/>
+      </svg>
+    </div>
+  </div>
+</section>

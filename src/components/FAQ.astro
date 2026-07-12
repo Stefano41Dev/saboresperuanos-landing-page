@@ -1,0 +1,55 @@
+---
+import site from '../data/site.json';
+import SectionHead from './SectionHead.astro';
+
+const { faq } = site;
+---
+
+<section class="faq" id="faq">
+  <div class="wrap faq-layout">
+    <SectionHead
+      eyebrow={faq.eyebrow}
+      title={faq.title}
+      description={faq.description}
+      style="margin-bottom:0"
+    />
+
+    <div class="faq-list">
+      {faq.items.map((item) => (
+        <div class:list={['faq-item', { open: item.openByDefault }]}>
+          <button class="faq-q" type="button">
+            {item.question}
+            <span class="plus">+</span>
+          </button>
+          <div
+            class="faq-a"
+            style={item.openByDefault ? 'max-height:120px' : undefined}
+          >
+            <p>{item.answer}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.faq-item').forEach((item) => {
+    const q = item.querySelector('.faq-q');
+    const a = item.querySelector('.faq-a');
+    if (!q || !a) return;
+
+    q.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach((el) => {
+        el.classList.remove('open');
+        const answer = el.querySelector('.faq-a') as HTMLElement | null;
+        if (answer) answer.style.maxHeight = '';
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        (a as HTMLElement).style.maxHeight = a.scrollHeight + 'px';
+      }
+    });
+  });
+</script>

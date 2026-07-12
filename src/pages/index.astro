@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import site from '../data/site.json';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Beneficios from '../components/Beneficios.astro';
+import AndeanDivider from '../components/AndeanDivider.astro';
+import Productos from '../components/Productos.astro';
+import Testimonios from '../components/Testimonios.astro';
+import FAQ from '../components/FAQ.astro';
+import CTA from '../components/CTA.astro';
+import Footer from '../components/Footer.astro';
+
+const { meta } = site;
+---
+
+<Layout title={meta.title} lang={meta.lang}>
+  <Header />
+  <main>
+    <Hero />
+    <Beneficios />
+    <AndeanDivider color="var(--dorado)" />
+    <Productos />
+    <AndeanDivider color="var(--crema)" />
+    <Testimonios />
+    <FAQ />
+    <CTA />
+  </main>
+  <Footer />
+</Layout>

@@ -1,0 +1,23 @@
+---
+import site from '../data/site.json';
+import SectionHead from './SectionHead.astro';
+import DishCard from './DishCard.astro';
+
+const { productos } = site;
+---
+
+<section class="productos" id="menu">
+  <div class="wrap">
+    <SectionHead
+      eyebrow={productos.eyebrow}
+      title={productos.title}
+      description={productos.description}
+    />
+
+    <div class="menu-grid">
+      {productos.platillos.map((platillo) => (
+        <DishCard {...platillo} />
+      ))}
+    </div>
+  </div>
+</section>

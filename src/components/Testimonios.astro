@@ -1,0 +1,40 @@
+---
+import site from '../data/site.json';
+import SectionHead from './SectionHead.astro';
+
+const { testimonios } = site;
+
+const avatarBgMap: Record<string, string> = {
+  dorado: 'var(--dorado)',
+  oliva: 'var(--oliva)',
+  rojo: 'var(--rojo)',
+};
+---
+
+<section class="testimonios" id="testimonios">
+  <div class="wrap">
+    <SectionHead
+      eyebrow={testimonios.eyebrow}
+      title={testimonios.title}
+      center
+    />
+
+    <div class="test-grid">
+      {testimonios.items.map((item) => (
+        <div class="test-card">
+          <div class="test-quote">&ldquo;</div>
+          <p class="msg">{item.message}</p>
+          <div class="test-person">
+            <div class="test-avatar" style={`background:${avatarBgMap[item.avatarBg]}`}>
+              {item.initials}
+            </div>
+            <div>
+              <div class="test-name">{item.name}</div>
+              <div class="test-role">{item.role}</div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

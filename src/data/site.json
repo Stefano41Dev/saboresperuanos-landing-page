@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "title": "Sabores Peruanos — Cocina peruana con historia",
+    "lang": "es"
+  },
+  "brand": {
+    "name": "Sabores",
+    "accent": "Peruanos",
+    "tagline": "Cocina peruana de autor, hecha con ingredientes de mercado y recetas de familia desde 1987."
+  },
+  "nav": {
+    "links": [
+      { "label": "Beneficios", "href": "#beneficios" },
+      { "label": "Menú", "href": "#menu" },
+      { "label": "Testimonios", "href": "#testimonios" },
+      { "label": "Preguntas", "href": "#faq" }
+    ],
+    "cta": { "label": "Reservar mesa", "href": "#cta" }
+  },
+  "hero": {
+    "eyebrow": "Cocina peruana · desde 1987",
+    "title": "Sabores que",
+    "titleEmphasis": "cuentan",
+    "titleLine2": "una historia",
+    "subtitle": "De la costa a los Andes, cada plato reúne ingredientes de nuestros mercados y recetas que pasan de generación en generación.",
+    "actions": [
+      { "label": "Ver el menú", "href": "#menu", "variant": "primary" },
+      { "label": "Reservar una mesa", "href": "#cta", "variant": "outline" }
+    ]
+  },
+  "beneficios": {
+    "eyebrow": "Por qué elegirnos",
+    "title": "Tradición servida con cuidado",
+    "description": "Cuatro razones por las que nuestros comensales vuelven una y otra vez.",
+    "items": [
+      {
+        "num": "01",
+        "icon": "leaf",
+        "title": "Ingredientes de mercado",
+        "description": "Compramos cada mañana en mercados locales: ají amarillo, choclo y camote de temporada."
+      },
+      {
+        "num": "02",
+        "icon": "grid",
+        "title": "Recetas de familia",
+        "description": "Nuestras preparaciones se heredan de la cocina de la abuela, sin atajos ni recetas genéricas."
+      },
+      {
+        "num": "03",
+        "icon": "clock",
+        "title": "Preparado al momento",
+        "description": "El ceviche se corta cuando llega tu pedido: nada de fondos preparados con horas de anticipación."
+      },
+      {
+        "num": "04",
+        "icon": "star",
+        "title": "Chefs peruanos",
+        "description": "Equipo de cocina formado en Lima, Arequipa y Trujillo, cada uno aportando su propia región."
+      }
+    ]
+  },
+  "productos": {
+    "eyebrow": "Menú destacado",
+    "title": "Los platos que nos representan",
+    "description": "Una selección de clásicos peruanos, de la costa a la sierra.",
+    "platillos": [
+      {
+        "id": "ceviche-clasico",
+        "tag": "Entrada · Costa",
+        "name": "Ceviche Clásico",
+        "price": "S/ 38",
+        "description": "Pescado fresco del día marinado en leche de tigre, ají limo, cebolla morada y camote.",
+        "mediaBg": "#f3ded4",
+        "image": null
+      },
+      {
+        "id": "lomo-saltado",
+        "tag": "Fondo · Costa",
+        "name": "Lomo Saltado",
+        "price": "S/ 42",
+        "description": "Tiras de lomo salteadas al wok con cebolla, tomate y sillao, servido con papas y arroz.",
+        "mediaBg": "#e7ddc4",
+        "image": null
+      },
+      {
+        "id": "causa-limena",
+        "tag": "Entrada · Costa",
+        "name": "Causa Limeña",
+        "price": "S/ 30",
+        "description": "Capas de papa amarilla sazonada con ají y limón, relleno de pollo o palta a elección.",
+        "mediaBg": "#dfe0c6",
+        "image": null
+      },
+      {
+        "id": "anticuchos",
+        "tag": "Parrilla · Sierra",
+        "name": "Anticuchos",
+        "price": "S/ 28",
+        "description": "Brochetas de corazón de res marinadas en ají panca, a la parrilla con choclo y papa.",
+        "mediaBg": "#e6d3c8",
+        "image": null
+      },
+      {
+        "id": "aji-de-gallina",
+        "tag": "Fondo · Sierra",
+        "name": "Ají de Gallina",
+        "price": "S/ 36",
+        "description": "Pollo deshilachado en crema de ají amarillo y nueces, con arroz blanco y aceituna.",
+        "mediaBg": "#f2e6c9",
+        "image": null
+      },
+      {
+        "id": "chicha-morada",
+        "tag": "Bebida · Costa",
+        "name": "Chicha Morada",
+        "price": "S/ 12",
+        "description": "Maíz morado hervido con piña, canela y clavo de olor, servida bien fría.",
+        "mediaBg": "#e3d9e5",
+        "image": null
+      }
+    ]
+  },
+  "testimonios": {
+    "eyebrow": "Testimonios",
+    "title": "Lo que dicen nuestros comensales",
+    "items": [
+      {
+        "message": "El ceviche me transportó directo a Lima. La leche de tigre tiene el punto exacto de ácido y picante.",
+        "initials": "MR",
+        "avatarBg": "dorado",
+        "name": "María Rodríguez",
+        "role": "Cliente habitual"
+      },
+      {
+        "message": "El lomo saltado tiene ese sabor a wok bien caliente que casi nadie logra fuera de casa. Vuelvo cada semana.",
+        "initials": "JT",
+        "avatarBg": "oliva",
+        "name": "Jorge Torres",
+        "role": "Food blogger"
+      },
+      {
+        "message": "Reservamos para un cumpleaños y el servicio fue impecable. Los anticuchos, de otro nivel.",
+        "initials": "CS",
+        "avatarBg": "rojo",
+        "name": "Claudia Salazar",
+        "role": "Cliente habitual"
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "title": "¿Tienes dudas?",
+    "description": "Aquí respondemos lo que más nos preguntan antes de venir.",
+    "items": [
+      {
+        "question": "¿Hacen entregas a domicilio?",
+        "answer": "Sí, entregamos en un radio de 8 km. Los pedidos de ceviche incluyen empaque especial para mantener la frescura.",
+        "openByDefault": true
+      },
+      {
+        "question": "¿Necesito reservar con anticipación?",
+        "answer": "Recomendamos reservar con 1 día de anticipación los fines de semana. Entre semana aceptamos walk-ins."
+      },
+      {
+        "question": "¿Tienen opciones vegetarianas?",
+        "answer": "Sí, la causa y varios piqueos tienen versión vegetariana con palta, camote y choclo."
+      },
+      {
+        "question": "¿De dónde vienen los ingredientes?",
+        "answer": "Trabajamos con proveedores de mercados locales y pescadores artesanales de la costa peruana."
+      },
+      {
+        "question": "¿Cuál es el horario de atención?",
+        "answer": "Abrimos de martes a domingo, de 12:00 m. a 10:30 p.m. Lunes cerrado por descanso del equipo."
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Reserva tu mesa",
+    "title": "Vive el sabor del Perú esta semana",
+    "description": "Cupos limitados los fines de semana. Escríbenos y te confirmamos en minutos.",
+    "actions": [
+      { "label": "Reservar ahora", "href": "#", "variant": "primary" },
+      { "label": "Ver el menú completo", "href": "#", "variant": "outline-light" }
+    ]
+  },
+  "footer": {
+    "explore": {
+      "title": "Explorar",
+      "links": [
+        { "label": "Beneficios", "href": "#beneficios" },
+        { "label": "Menú", "href": "#menu" },
+        { "label": "Testimonios", "href": "#testimonios" },
+        { "label": "Preguntas", "href": "#faq" }
+      ]
+    },
+    "contacto": {
+      "title": "Contacto",
+      "links": [
+        { "label": "Av. La Marina 450, Lima", "href": "#" },
+        { "label": "+51 987 654 321", "href": "#" },
+        { "label": "hola@saboresperuanos.pe", "href": "#" }
+      ]
+    },
+    "social": {
+      "title": "Síguenos",
+      "links": [
+        { "label": "Instagram", "href": "#" },
+        { "label": "Facebook", "href": "#" },
+        { "label": "TikTok", "href": "#" }
+      ]
+    },
+    "copyright": "© 2026 Sabores Peruanos. Todos los derechos reservados.",
+    "disclaimer": "Diseño de portafolio — no es un negocio real."
+  }
+}

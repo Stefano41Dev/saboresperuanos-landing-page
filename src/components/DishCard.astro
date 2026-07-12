@@ -1,0 +1,33 @@
+---
+import DishIllustration from './DishIllustration.astro';
+
+interface Props {
+  id: string;
+  tag: string;
+  name: string;
+  price: string;
+  description: string;
+  mediaBg: string;
+  image: string | null;
+}
+
+const { id, tag, name, price, description, mediaBg, image } = Astro.props;
+---
+
+<article class="dish">
+  <div class="dish-media" style={`background:${mediaBg}`}>
+    {image ? (
+      <img src={image} alt={name} loading="lazy" />
+    ) : (
+      <DishIllustration id={id} />
+    )}
+  </div>
+  <div class="dish-body">
+    <span class="dish-tag">{tag}</span>
+    <div class="dish-top">
+      <h3>{name}</h3>
+      <span class="dish-price">{price}</span>
+    </div>
+    <p>{description}</p>
+  </div>
+</article>

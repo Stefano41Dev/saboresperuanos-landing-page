@@ -1,0 +1,28 @@
+---
+import site from '../data/site.json';
+import SectionHead from './SectionHead.astro';
+import BenefitIcon from './BenefitIcon.astro';
+
+const { beneficios } = site;
+---
+
+<section class="beneficios" id="beneficios">
+  <div class="wrap">
+    <SectionHead
+      eyebrow={beneficios.eyebrow}
+      title={beneficios.title}
+      description={beneficios.description}
+    />
+
+    <div class="benef-grid">
+      {beneficios.items.map((item) => (
+        <div class="benef-card">
+          <span class="benef-num">{item.num}</span>
+          <BenefitIcon icon={item.icon} />
+          <h3>{item.title}</h3>
+          <p>{item.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

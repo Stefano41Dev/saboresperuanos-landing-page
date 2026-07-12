@@ -1,0 +1,40 @@
+---
+import site from '../data/site.json';
+import AndeanDivider from './AndeanDivider.astro';
+
+const { brand, footer } = site;
+---
+
+<footer>
+  <AndeanDivider color="var(--dorado)" />
+  <div class="footer-top">
+    <div class="wrap footer-grid">
+      <div>
+        <div class="footer-logo">{brand.name} <span>{brand.accent}</span></div>
+        <p>{brand.tagline}</p>
+      </div>
+      <div class="footer-col">
+        <h4>{footer.explore.title}</h4>
+        {footer.explore.links.map((link) => (
+          <a href={link.href}>{link.label}</a>
+        ))}
+      </div>
+      <div class="footer-col">
+        <h4>{footer.contacto.title}</h4>
+        {footer.contacto.links.map((link) => (
+          <a href={link.href}>{link.label}</a>
+        ))}
+      </div>
+      <div class="footer-col">
+        <h4>{footer.social.title}</h4>
+        {footer.social.links.map((link) => (
+          <a href={link.href}>{link.label}</a>
+        ))}
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>{footer.copyright}</span>
+    <span>{footer.disclaimer}</span>
+  </div>
+</footer>

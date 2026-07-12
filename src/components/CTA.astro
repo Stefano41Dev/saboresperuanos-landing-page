@@ -1,0 +1,23 @@
+---
+import site from '../data/site.json';
+
+const { cta } = site;
+
+const btnClass = (variant: string) => {
+  if (variant === 'outline-light') return 'btn btn-outline-light';
+  return 'btn btn-primary';
+};
+---
+
+<section class="cta" id="cta">
+  <div class="wrap">
+    <div class="eyebrow">{cta.eyebrow}</div>
+    <h2>{cta.title}</h2>
+    <p>{cta.description}</p>
+    <div class="cta-actions">
+      {cta.actions.map((action) => (
+        <a href={action.href} class={btnClass(action.variant)}>{action.label}</a>
+      ))}
+    </div>
+  </div>
+</section>
