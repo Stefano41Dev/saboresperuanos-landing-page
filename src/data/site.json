@@ -71,7 +71,7 @@
         "price": "S/ 38",
         "description": "Pescado fresco del día marinado en leche de tigre, ají limo, cebolla morada y camote.",
         "mediaBg": "#f3ded4",
-        "image": null
+        "image": "https://res.cloudinary.com/dmqzrq0w7/image/upload/v1783909110/lg_64f79f2894d02071770b0e72_v1fjvm.jpg"
       },
       {
         "id": "lomo-saltado",
@@ -80,7 +80,7 @@
         "price": "S/ 42",
         "description": "Tiras de lomo salteadas al wok con cebolla, tomate y sillao, servido con papas y arroz.",
         "mediaBg": "#e7ddc4",
-        "image": null
+        "image": "https://res.cloudinary.com/dmqzrq0w7/image/upload/v1783909110/9755d8_b2d98eade0814b17a67fdf7d95888fdc_mv2_xekjs5.png"
       },
       {
         "id": "causa-limena",
@@ -89,7 +89,7 @@
         "price": "S/ 30",
         "description": "Capas de papa amarilla sazonada con ají y limón, relleno de pollo o palta a elección.",
         "mediaBg": "#dfe0c6",
-        "image": null
+        "image": "https://res.cloudinary.com/dmqzrq0w7/image/upload/v1783909110/causalimeniathumb-1_k4ysdu.jpg"
       },
       {
         "id": "anticuchos",
@@ -98,7 +98,7 @@
         "price": "S/ 28",
         "description": "Brochetas de corazón de res marinadas en ají panca, a la parrilla con choclo y papa.",
         "mediaBg": "#e6d3c8",
-        "image": null
+        "image": "https://res.cloudinary.com/dmqzrq0w7/image/upload/v1783909109/Anticucho-shutterstock_185287433_1_sci07g.webp"
       },
       {
         "id": "aji-de-gallina",
@@ -107,7 +107,7 @@
         "price": "S/ 36",
         "description": "Pollo deshilachado en crema de ají amarillo y nueces, con arroz blanco y aceituna.",
         "mediaBg": "#f2e6c9",
-        "image": null
+        "image": "https://res.cloudinary.com/dmqzrq0w7/image/upload/v1783909109/aji-de-gallina-de-quinua_kja5jh.jpg"
       },
       {
         "id": "chicha-morada",
@@ -116,7 +116,7 @@
         "price": "S/ 12",
         "description": "Maíz morado hervido con piña, canela y clavo de olor, servida bien fría.",
         "mediaBg": "#e3d9e5",
-        "image": null
+        "image": "https://res.cloudinary.com/dmqzrq0w7/image/upload/v1783909109/chicha-morada-peruana_800x534_lxx92b.webp"
       }
     ]
   },
