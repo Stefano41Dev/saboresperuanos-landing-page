@@ -15,10 +15,25 @@ const { title, lang = 'es' } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/logosb.png" />
-    
     <meta name="generator" content={Astro.generator} />
-    <meta name="description" content="El mejor restaurante de comida Peruana. De la costa a los Andes, cada plato reúne ingredientes de nuestros mercados y recetas que pasan de generación en generación."/>
+    <!--SEO -->
     <title>{title}</title>
+
+    <meta name="description" content="El mejor restaurante de comida Peruana. De la costa a los Andes, disfruta de la mejor experiencia de nuestra gastronomía."/>
+    
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content={title} />
+    <meta
+      property="og:description"
+      content="Conoce uno de los mejores restaurantes de la comida Peruana"
+    />
+    <meta
+      property="og:image"
+      content="/logosb.png"
+    />
+    <meta property="og:url" content="https://saboresperuanos-landing-page.vercel.app" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
